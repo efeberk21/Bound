@@ -1,8 +1,11 @@
 {
   "network": "Tiramisu",
   "chainId": 7738577,
-  "commit": null,
-  "exportedAt": "2026-10-16T06:58:50.972Z",
+  "commit": "39627f43a4fd42d5eefcc40e28e8cd0c35bd1fb0",
+  "workingTreeDirty": true,
+  "sourceTreeHash": "9538ed09d92c0ff7f65061c6a693d2c2b3ee161f7c3df14154b516bf0b017c86",
+  "nodeVersion": "v22.23.3",
+  "exportedAt": "2026-10-16T12:53:29.915Z",
   "lifecycle": [
     {
       "id": "98cd0a6f-0980-47bd-90e0-05e6a27aabb8",
@@ -167,26 +170,30 @@
   ],
   "live": [
     {
-      "runId": "7b8ebdf1-0a95-4559-8b58-49e4f1792eea"
+      "runId": "69dc5294-ed95-4c65-aee2-c68e838005a8",
+      "mode": "environment",
+      "nodeVersion": "v22.23.3",
+      "platform": "win32",
+      "origin": "https://bound-inky.vercel.app"
     },
     {
-      "id": "f085318d-603b-4ffe-8203-3ed1cf8a7362",
-      "resource": "demo://bound/7b8ebdf1-0a95-4559-8b58-49e4f1792eea/atlas",
+      "id": "dbe575c0-5d15-4189-9701-6e7e135d4df5",
+      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
       "operation": "grant",
       "status": "confirmed",
-      "txHash": "0xce9175c0a1139a36286cb3405de9f38a7d62e4b0f40f36aaabe6c69ed0d128e2",
-      "entityKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-      "block": "642031",
+      "txHash": "0xc180a56389948ea12d977dcc8873c1d68a5d5cb520ef72c0418055407aa50413",
+      "entityKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+      "block": "652564",
       "errorCode": null
     },
     {
-      "id": "c0039ad2-ffa8-4894-a996-91bd08e87000",
-      "resource": "demo://bound/7b8ebdf1-0a95-4559-8b58-49e4f1792eea/boreal",
+      "id": "f845dfc0-31c2-4bff-ac56-6c57b0d35b76",
+      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/boreal",
       "operation": "grant",
       "status": "confirmed",
-      "txHash": "0x0c2eb0fb282e40f826d6c94b0dcadfdd5510c41240cd98d4d68ade0e456edf52",
-      "entityKey": "0xa085cb32cd1926f55ebeb00453f2e02c1aeaf81c9170c514469c71bbee6c2b5d",
-      "block": "642033",
+      "txHash": "0x7fe5fa6b83d9a29bdce636cffe46c2d4e4d2f6445018908afabed6ff06237c89",
+      "entityKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
+      "block": "652566",
       "errorCode": null
     },
     {
@@ -194,33 +201,33 @@
       "project": "atlas",
       "results": [
         {
-          "httpStatus": 200,
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.content.v1",
-          "grantKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-          "checkedAt": "2026-10-16T06:57:14.897Z",
-          "requestId": "cd8adf91-0366-4bca-95bf-5b7bf12bd943",
-          "checkedBlock": "642034",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652567",
+          "checkedAt": "2026-10-16T12:48:20.731Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "d111b400-0b06-47fe-a6a8-2a256846a5b1",
+          "httpStatus": 200,
           "content": {
             "title": "Atlas — clear content for every launch",
             "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction. Bring the important details together, explain what the product does, and prepare a short preview that is easy for your audience to understand."
           }
         },
         {
-          "httpStatus": 200,
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-          "checkedAt": "2026-10-16T06:57:16.883Z",
-          "requestId": "1e32cb8d-3230-4029-ae34-116001c5726f",
-          "checkedBlock": "642035",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652567",
+          "checkedAt": "2026-10-16T12:48:21.793Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "aec44d65-a369-4ae7-8a86-1b21ba073c1e",
+          "httpStatus": 200,
           "preview": {
-            "title": "Atlas makes launch content clear",
-            "body": "Turn launch notes into a short, clear product introduction. Keep your team aligned and your audience informed.",
+            "title": "Atlas — clear content for every launch",
+            "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction.",
             "revision": 1
           }
         }
@@ -231,36 +238,181 @@
         "revision": 0
       },
       "after": {
-        "title": "Atlas makes launch content clear",
-        "body": "Turn launch notes into a short, clear product introduction. Keep your team aligned and your audience informed.",
+        "title": "Atlas — clear content for every launch",
+        "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction.",
         "revision": 1
       }
+    },
+    {
+      "mode": "scenario",
+      "name": "T01: real Content response determines the stored preview",
+      "outcome": "passed"
+    },
+    {
+      "mode": "tamper-agent",
+      "results": [
+        {
+          "decision": "DENY",
+          "reasonCode": "WRONG_AGENT",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedAt": "2026-10-16T12:48:22.518Z",
+          "requestId": "1ee28d74-425a-4049-a46e-da1fb8091021",
+          "checkedBlock": "652568",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec"
+        }
+      ]
+    },
+    {
+      "mode": "tamper-body",
+      "results": [
+        {
+          "decision": "DENY",
+          "reasonCode": "BODY_TAMPERED",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedAt": "2026-10-16T12:48:23.723Z",
+          "requestId": "a7fdf3c4-96b4-48e4-b923-777dd06c4ff5"
+        }
+      ]
+    },
+    {
+      "mode": "tamper-resource",
+      "results": [
+        {
+          "decision": "DENY",
+          "reasonCode": "WRONG_SCOPE",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedAt": "2026-10-16T12:48:24.522Z",
+          "requestId": "a5daa35f-90ef-45f8-a026-abd9fa176847"
+        }
+      ]
+    },
+    {
+      "mode": "tamper-action",
+      "results": [
+        {
+          "decision": "DENY",
+          "reasonCode": "INVALID_PAYLOAD",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedAt": "2026-10-16T12:48:25.250Z",
+          "requestId": "423f1ed0-edce-4324-87ad-e7b1036e831b"
+        }
+      ]
+    },
+    {
+      "mode": "tamper-deployment",
+      "results": [
+        {
+          "decision": "DENY",
+          "reasonCode": "NONCE_INVALID",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedAt": "2026-10-16T12:48:25.900Z",
+          "requestId": "aac72309-bb51-40c8-bce0-41da5533ae89"
+        }
+      ]
+    },
+    {
+      "mode": "scenario",
+      "name": "T04/T05/T16: wrong agent and body/resource/action/domain tampering never write",
+      "outcome": "passed"
+    },
+    {
+      "mode": "two-process-signed-concurrent",
+      "results": [
+        {
+          "decision": "ALLOW",
+          "reasonCode": "GRANT_VALID",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652571",
+          "checkedAt": "2026-10-16T12:48:30.059Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "0a6a43c4-e0c0-4616-b18c-7f9a1462232e",
+          "preview": {
+            "title": "Concurrent test",
+            "body": "Only one update is allowed.",
+            "revision": 2
+          },
+          "httpStatus": 200
+        },
+        {
+          "decision": "DENY",
+          "reasonCode": "NONCE_OR_TIME_INVALID",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652571",
+          "checkedAt": "2026-10-16T12:48:30.184Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "adc1686d-15ab-4383-925e-f9833763a697",
+          "httpStatus": 403
+        }
+      ]
+    },
+    {
+      "mode": "scenario",
+      "name": "T07/T08: concurrent replay across processes and restart causes one update",
+      "outcome": "passed"
+    },
+    {
+      "mode": "response-loss-restart",
+      "before": {
+        "title": "Concurrent test",
+        "body": "Only one update is allowed.",
+        "revision": 2,
+        "project": "atlas"
+      },
+      "after": {
+        "title": "Response lost",
+        "body": "The committed effect is recovered from state.",
+        "revision": 3,
+        "project": "atlas"
+      },
+      "results": [
+        {
+          "decision": "DENY",
+          "reasonCode": "NONCE_INVALID",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedAt": "2026-10-16T12:48:32.010Z",
+          "requestId": "ca4d97cc-34e9-4b78-a8d5-964207ffeef4",
+          "httpStatus": 403
+        }
+      ]
+    },
+    {
+      "mode": "scenario",
+      "name": "T08 response loss: committed write survives socket loss, restart and retry",
+      "outcome": "passed"
     },
     {
       "mode": "wrong-project",
       "project": "boreal",
       "results": [
         {
-          "httpStatus": 403,
           "decision": "DENY",
           "reasonCode": "WRONG_SCOPE",
           "serviceId": "bound.content.v1",
-          "grantKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-          "checkedAt": "2026-10-16T06:57:14.745Z",
-          "requestId": "5df461b1-2443-41af-aff7-1a86852d9ad1",
-          "checkedBlock": "642036",
-          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec"
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652576",
+          "checkedAt": "2026-10-16T12:48:38.786Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "90900765-aabf-4a62-8fc2-2c42d16ed555",
+          "httpStatus": 403
         },
         {
-          "httpStatus": 403,
           "decision": "DENY",
           "reasonCode": "WRONG_SCOPE",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-          "checkedAt": "2026-10-16T06:57:13.654Z",
-          "requestId": "9bd0b2aa-2181-4695-8b52-89cff63687cf",
-          "checkedBlock": "642036",
-          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec"
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652576",
+          "checkedAt": "2026-10-16T12:48:37.799Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "0ae571e6-8dd4-4089-8eab-ac40e3b36cd8",
+          "httpStatus": 403
         }
       ],
       "before": {
@@ -275,13 +427,18 @@
       }
     },
     {
-      "id": "b8e4a48b-9575-40a7-922c-542c3e60d238",
-      "resource": "demo://bound/7b8ebdf1-0a95-4559-8b58-49e4f1792eea/atlas",
+      "mode": "scenario",
+      "name": "T02: wrong-project requests leave the target unchanged",
+      "outcome": "passed"
+    },
+    {
+      "id": "94c3e072-456d-4176-a8d7-e206f957a124",
+      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
       "operation": "forged",
       "status": "confirmed",
-      "txHash": "0x0c5b92a8529cc25e9b54bd5570414af1ee9dba1a31e74f53c6e0f73fd6065519",
-      "entityKey": "0x2147d1cde0185280459b4c26731e375b26a64a21ab0cb9795ec6a5c8bb7556f7",
-      "block": "642039",
+      "txHash": "0x0908bf54b53547646c9df93e4cb14230809e14feb9c554dbf200b62e690b72f1",
+      "entityKey": "0xeac726154960c46ee50e58ad480c1ba24845b09a05b1b72d99e16187dbdcbf7b",
+      "block": "652578",
       "errorCode": null
     },
     {
@@ -289,158 +446,228 @@
       "project": "atlas",
       "results": [
         {
-          "httpStatus": 403,
           "decision": "DENY",
           "reasonCode": "UNTRUSTED_CREATOR",
           "serviceId": "bound.content.v1",
-          "grantKey": "0x2147d1cde0185280459b4c26731e375b26a64a21ab0cb9795ec6a5c8bb7556f7",
-          "checkedAt": "2026-10-16T06:57:21.836Z",
-          "requestId": "8db04393-e7f7-4a3f-9ffa-fc19cbe064dc",
-          "checkedBlock": "642040",
-          "observedCreator": "0xAd0c9f02854752f65Ed995e37944790CF4CDfdD3"
+          "grantKey": "0xeac726154960c46ee50e58ad480c1ba24845b09a05b1b72d99e16187dbdcbf7b",
+          "checkedBlock": "652579",
+          "checkedAt": "2026-10-16T12:48:44.840Z",
+          "observedCreator": "0xAd0c9f02854752f65Ed995e37944790CF4CDfdD3",
+          "requestId": "e36490de-4102-4837-925b-a5f43c1aaf12",
+          "httpStatus": 403
         },
         {
-          "httpStatus": 403,
           "decision": "DENY",
           "reasonCode": "UNTRUSTED_CREATOR",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x2147d1cde0185280459b4c26731e375b26a64a21ab0cb9795ec6a5c8bb7556f7",
-          "checkedAt": "2026-10-16T06:57:20.778Z",
-          "requestId": "581010a5-e437-47fe-a783-ffde4340de53",
-          "checkedBlock": "642039",
-          "observedCreator": "0xAd0c9f02854752f65Ed995e37944790CF4CDfdD3"
+          "grantKey": "0xeac726154960c46ee50e58ad480c1ba24845b09a05b1b72d99e16187dbdcbf7b",
+          "checkedBlock": "652579",
+          "checkedAt": "2026-10-16T12:48:43.701Z",
+          "observedCreator": "0xAd0c9f02854752f65Ed995e37944790CF4CDfdD3",
+          "requestId": "e933f8d6-7a31-4218-8cf4-4c928233e005",
+          "httpStatus": 403
         }
       ],
       "before": {
-        "title": "Atlas makes launch content clear",
-        "body": "Turn launch notes into a short, clear product introduction. Keep your team aligned and your audience informed.",
-        "revision": 1
+        "title": "Response lost",
+        "body": "The committed effect is recovered from state.",
+        "revision": 3
       },
       "after": {
-        "title": "Atlas makes launch content clear",
-        "body": "Turn launch notes into a short, clear product introduction. Keep your team aligned and your audience informed.",
-        "revision": 1
+        "title": "Response lost",
+        "body": "The committed effect is recovered from state.",
+        "revision": 3
       }
+    },
+    {
+      "mode": "scenario",
+      "name": "T03: actual attacker grant cannot impersonate the owner",
+      "outcome": "passed"
     },
     {
       "mode": "replay",
       "project": "atlas",
       "results": [
         {
-          "httpStatus": 200,
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
-          "serviceId": "bound.preview.v1",
-          "grantKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-          "checkedAt": "2026-10-16T06:57:28.828Z",
-          "requestId": "b969d345-7255-4e1d-bdb7-aceea7243f71",
-          "checkedBlock": "642041",
+          "serviceId": "bound.content.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652580",
+          "checkedAt": "2026-10-16T12:48:46.735Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "preview": {
-            "title": "Atlas makes launch content clear",
-            "body": "Turn launch notes into a short, clear product introduction. Keep your team aligned and your audience informed.",
-            "revision": 2
+          "requestId": "7584e6d7-a6dd-435d-b93d-f76fd291e57a",
+          "httpStatus": 200,
+          "content": {
+            "title": "Atlas — clear content for every launch",
+            "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction. Bring the important details together, explain what the product does, and prepare a short preview that is easy for your audience to understand."
           }
         },
         {
-          "httpStatus": 403,
+          "decision": "ALLOW",
+          "reasonCode": "GRANT_VALID",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652580",
+          "checkedAt": "2026-10-16T12:48:47.488Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "a315a614-7ad0-4c1c-8d40-2c7aad25bdf6",
+          "httpStatus": 200,
+          "preview": {
+            "title": "Atlas — clear content for every launch",
+            "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction.",
+            "revision": 4
+          }
+        },
+        {
           "decision": "DENY",
           "reasonCode": "NONCE_INVALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-          "checkedAt": "2026-10-16T06:57:24.728Z",
-          "requestId": "64c5d833-e783-430e-90f4-646d70f72bad"
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedAt": "2026-10-16T12:48:47.569Z",
+          "requestId": "c9c66d71-00a8-4a51-a55f-a742ccd2f686",
+          "httpStatus": 403
         }
       ],
       "before": {
-        "title": "Atlas makes launch content clear",
-        "body": "Turn launch notes into a short, clear product introduction. Keep your team aligned and your audience informed.",
-        "revision": 1
+        "title": "Response lost",
+        "body": "The committed effect is recovered from state.",
+        "revision": 3
       },
       "after": {
-        "title": "Atlas makes launch content clear",
-        "body": "Turn launch notes into a short, clear product introduction. Keep your team aligned and your audience informed.",
-        "revision": 2
+        "title": "Atlas — clear content for every launch",
+        "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction.",
+        "revision": 4
       }
     },
     {
-      "id": "fe467208-db98-4959-8d25-8c55b5fe11a3",
-      "resource": "demo://bound/7b8ebdf1-0a95-4559-8b58-49e4f1792eea/atlas",
+      "mode": "scenario",
+      "name": "T06: replay reads Content, then accepts one Preview write and rejects its duplicate",
+      "outcome": "passed"
+    },
+    {
+      "id": "8e95ed24-280e-4c6b-834c-d0f6fae33104",
+      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
       "operation": "revoke",
       "status": "confirmed",
-      "txHash": "0x6cc74b4dea971135fb581c7d74fa9cb7b81509d1a0c39f010ad19493524c1ccf",
-      "entityKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-      "block": "642043",
+      "txHash": "0xbed7aeafbbf802d41725f1c0ced59897b3c683ce0fb3b074f517c10eb5fe494d",
+      "entityKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+      "block": "652584",
       "errorCode": null
+    },
+    {
+      "mode": "controlled-read-revoke-update",
+      "results": [
+        {
+          "decision": "ALLOW",
+          "reasonCode": "GRANT_VALID",
+          "serviceId": "bound.content.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652582",
+          "checkedAt": "2026-10-16T12:48:50.723Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "6bcff667-debb-4293-a808-6d192b7cb353",
+          "content": {
+            "title": "Atlas — clear content for every launch",
+            "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction. Bring the important details together, explain what the product does, and prepare a short preview that is easy for your audience to understand."
+          },
+          "httpStatus": 200
+        },
+        {
+          "decision": "DENY",
+          "reasonCode": "GRANT_NOT_ACTIVE",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652585",
+          "checkedAt": "2026-10-16T12:48:56.813Z",
+          "requestId": "608b1dbf-2132-4172-91b0-5e0772b25af4",
+          "httpStatus": 403
+        }
+      ]
     },
     {
       "mode": "check",
       "project": "atlas",
       "results": [
         {
-          "httpStatus": 403,
           "decision": "DENY",
           "reasonCode": "GRANT_NOT_ACTIVE",
           "serviceId": "bound.content.v1",
-          "grantKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-          "checkedAt": "2026-10-16T06:57:30.897Z",
-          "requestId": "d73bbce7-2309-44fc-ab03-21a867af9ea5",
-          "checkedBlock": "642044"
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652586",
+          "checkedAt": "2026-10-16T12:48:58.878Z",
+          "requestId": "08a70d31-3743-4a89-8b5c-dd4576e7b27e",
+          "httpStatus": 403
         },
         {
-          "httpStatus": 403,
           "decision": "DENY",
           "reasonCode": "GRANT_NOT_ACTIVE",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xca529ff855c0dede37cfd362ba1bd33a09873ac6a2628ede8583ba6ffd50145d",
-          "checkedAt": "2026-10-16T06:57:29.893Z",
-          "requestId": "8cd8d6aa-c90d-44d0-b5cc-2ed67682e68d",
-          "checkedBlock": "642044"
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652586",
+          "checkedAt": "2026-10-16T12:48:58.109Z",
+          "requestId": "3c104ba8-727e-44ca-81e1-91faef81cb05",
+          "httpStatus": 403
         }
       ],
       "before": {
-        "title": "Atlas makes launch content clear",
-        "body": "Turn launch notes into a short, clear product introduction. Keep your team aligned and your audience informed.",
-        "revision": 2
+        "title": "Atlas — clear content for every launch",
+        "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction.",
+        "revision": 4
       },
       "after": {
-        "title": "Atlas makes launch content clear",
-        "body": "Turn launch notes into a short, clear product introduction. Keep your team aligned and your audience informed.",
-        "revision": 2
+        "title": "Atlas — clear content for every launch",
+        "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction.",
+        "revision": 4
       }
+    },
+    {
+      "mode": "scenario",
+      "name": "T15/T09: read, revoke, then a new write denies without changing stored state",
+      "outcome": "passed"
+    },
+    {
+      "id": "8e95ed24-280e-4c6b-834c-d0f6fae33104",
+      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
+      "operation": "revoke",
+      "status": "confirmed",
+      "txHash": "0xbed7aeafbbf802d41725f1c0ced59897b3c683ce0fb3b074f517c10eb5fe494d",
+      "entityKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+      "block": "652584",
+      "errorCode": null
     },
     {
       "mode": "deterministic",
       "project": "boreal",
       "results": [
         {
-          "httpStatus": 200,
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.content.v1",
-          "grantKey": "0xa085cb32cd1926f55ebeb00453f2e02c1aeaf81c9170c514469c71bbee6c2b5d",
-          "checkedAt": "2026-10-16T06:57:37.863Z",
-          "requestId": "8503adf7-aaab-4c39-a3f9-b36c76276376",
-          "checkedBlock": "642045",
+          "grantKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
+          "checkedBlock": "652587",
+          "checkedAt": "2026-10-16T12:49:00.919Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "ee1f7c6b-2a30-4ed2-81fe-1fdd56ae414b",
+          "httpStatus": 200,
           "content": {
             "title": "Boreal — bring project updates together",
             "body": "Boreal gives small teams a simple place to shape their project updates. Collect progress, explain the next milestone, and turn a long description into a concise preview that people can read quickly before exploring the full project."
           }
         },
         {
-          "httpStatus": 200,
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xa085cb32cd1926f55ebeb00453f2e02c1aeaf81c9170c514469c71bbee6c2b5d",
-          "checkedAt": "2026-10-16T06:57:39.230Z",
-          "requestId": "dfeacc44-c1b5-4bb5-ba9f-d94c601c2bc9",
-          "checkedBlock": "642046",
+          "grantKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
+          "checkedBlock": "652587",
+          "checkedAt": "2026-10-16T12:49:01.682Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "3d914065-5a5c-42da-8ed8-e1d295254dc2",
+          "httpStatus": 200,
           "preview": {
-            "title": "Boreal keeps project updates simple",
-            "body": "Collect progress and share the next milestone in a concise project preview that your audience can read quickly.",
+            "title": "Boreal — bring project updates together",
+            "body": "Boreal gives small teams a simple place to shape their project updates.",
             "revision": 1
           }
         }
@@ -451,10 +678,205 @@
         "revision": 0
       },
       "after": {
-        "title": "Boreal keeps project updates simple",
-        "body": "Collect progress and share the next milestone in a concise project preview that your audience can read quickly.",
+        "title": "Boreal — bring project updates together",
+        "body": "Boreal gives small teams a simple place to shape their project updates.",
         "revision": 1
       }
+    },
+    {
+      "mode": "management-unavailable",
+      "results": [
+        {
+          "decision": "DENY",
+          "reasonCode": "GRANT_NOT_ACTIVE",
+          "serviceId": "bound.content.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652589",
+          "checkedAt": "2026-10-16T12:48:58.459Z",
+          "requestId": "eedcb2f6-35c8-486c-abda-b9536487eecc",
+          "httpStatus": 403
+        },
+        {
+          "decision": "DENY",
+          "reasonCode": "GRANT_NOT_ACTIVE",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
+          "checkedBlock": "652589",
+          "checkedAt": "2026-10-16T12:49:00.597Z",
+          "requestId": "662b5626-7bcc-4782-869c-9611e9240743",
+          "httpStatus": 403
+        },
+        {
+          "decision": "ALLOW",
+          "reasonCode": "GRANT_VALID",
+          "serviceId": "bound.content.v1",
+          "grantKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
+          "checkedBlock": "652590",
+          "checkedAt": "2026-10-16T12:49:07.264Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "60e66bef-9af8-4384-834c-1e5a88a368ef",
+          "content": {
+            "title": "Boreal — bring project updates together",
+            "body": "Boreal gives small teams a simple place to shape their project updates. Collect progress, explain the next milestone, and turn a long description into a concise preview that people can read quickly before exploring the full project."
+          },
+          "httpStatus": 200
+        },
+        {
+          "decision": "ALLOW",
+          "reasonCode": "GRANT_VALID",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
+          "checkedBlock": "652591",
+          "checkedAt": "2026-10-16T12:49:09.208Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "52949fd1-e004-4718-95bf-fd40a5e8de7c",
+          "preview": {
+            "title": "Independent tool",
+            "body": "Management is unavailable.",
+            "revision": 2
+          },
+          "httpStatus": 200
+        }
+      ]
+    },
+    {
+      "mode": "scenario",
+      "name": "T10/T18: same agent continues Boreal with management absent",
+      "outcome": "passed"
+    },
+    {
+      "mode": "scenario",
+      "name": "T19: forged cookie and session injection fail",
+      "outcome": "passed"
+    },
+    {
+      "id": "8c08fc68-cbba-487e-a91e-f4485047a29f",
+      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
+      "operation": "expiry",
+      "status": "confirmed",
+      "txHash": "0xa2c362febca349f70843e8d891509dba851105c678c0c7340716f81c6f05a142",
+      "entityKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
+      "block": "652594",
+      "errorCode": null
+    },
+    {
+      "mode": "expiry",
+      "project": "atlas",
+      "results": [
+        {
+          "decision": "ALLOW",
+          "reasonCode": "GRANT_VALID",
+          "serviceId": "bound.content.v1",
+          "grantKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
+          "checkedBlock": "652595",
+          "checkedAt": "2026-10-16T12:49:18.142Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "4031c2cb-4ee5-44cf-a2fb-56156352e3d9",
+          "httpStatus": 200,
+          "content": {
+            "title": "Atlas — clear content for every launch",
+            "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction. Bring the important details together, explain what the product does, and prepare a short preview that is easy for your audience to understand."
+          }
+        },
+        {
+          "decision": "ALLOW",
+          "reasonCode": "GRANT_VALID",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
+          "checkedBlock": "652595",
+          "checkedAt": "2026-10-16T12:49:17.244Z",
+          "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
+          "requestId": "5356f380-9f60-4147-9902-be62a3f2d4c2",
+          "httpStatus": 200,
+          "preview": {
+            "title": "Permission boundary test",
+            "body": "Synthetic write used to inspect this grant’s permission boundary.",
+            "revision": 5
+          }
+        }
+      ],
+      "before": {
+        "title": "Atlas — clear content for every launch",
+        "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction.",
+        "revision": 4
+      },
+      "after": {
+        "title": "Permission boundary test",
+        "body": "Synthetic write used to inspect this grant’s permission boundary.",
+        "revision": 5
+      }
+    },
+    {
+      "mode": "expiry",
+      "project": "atlas",
+      "results": [
+        {
+          "decision": "DENY",
+          "reasonCode": "GRANT_NOT_ACTIVE",
+          "serviceId": "bound.content.v1",
+          "grantKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
+          "checkedBlock": "652629",
+          "checkedAt": "2026-10-16T12:50:24.848Z",
+          "requestId": "98b51f41-b4b6-4531-8aaf-f41bbfd3f5d0",
+          "httpStatus": 403
+        },
+        {
+          "decision": "DENY",
+          "reasonCode": "GRANT_NOT_ACTIVE",
+          "serviceId": "bound.preview.v1",
+          "grantKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
+          "checkedBlock": "652629",
+          "checkedAt": "2026-10-16T12:50:23.793Z",
+          "requestId": "45848555-0e36-4f8b-a3ba-7ccef86c3399",
+          "httpStatus": 403
+        }
+      ],
+      "before": {
+        "title": "Permission boundary test",
+        "body": "Synthetic write used to inspect this grant’s permission boundary.",
+        "revision": 5
+      },
+      "after": {
+        "title": "Permission boundary test",
+        "body": "Synthetic write used to inspect this grant’s permission boundary.",
+        "revision": 5
+      }
+    },
+    {
+      "mode": "scenario",
+      "name": "T11: separate short-lived Atlas grant allows before expiry and denies after",
+      "outcome": "passed"
     }
-  ]
+  ],
+  "measurements": {
+    "mode": "measurement",
+    "environment": "win32 v22.23.3 client -> http://localhost:5174 -> Arkiv/Neon",
+    "nodeVersion": "v22.23.3",
+    "platform": "win32",
+    "origin": "http://localhost:5174",
+    "metric": "Challenge issuance + EIP-712 signing + content verification HTTP round-trip; three individual samples, no SLA",
+    "samples": [
+      {
+        "sample": 1,
+        "durationMs": 2297,
+        "decision": "ALLOW",
+        "checkedBlock": "652138",
+        "checkedAt": "2026-10-16T12:34:04.139Z"
+      },
+      {
+        "sample": 2,
+        "durationMs": 1330,
+        "decision": "ALLOW",
+        "checkedBlock": "652139",
+        "checkedAt": "2026-10-16T12:34:05.469Z"
+      },
+      {
+        "sample": 3,
+        "durationMs": 1367,
+        "decision": "ALLOW",
+        "checkedBlock": "652140",
+        "checkedAt": "2026-10-16T12:34:06.837Z"
+      }
+    ]
+  }
 }

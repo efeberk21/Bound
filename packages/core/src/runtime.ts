@@ -1,20 +1,31 @@
-import { randomBytes, randomUUID } from 'node:crypto';
-import { database } from './db.js';
-import { parseResource, type Envelope, type Preview, type ServiceId } from './contracts.js';
+import { randomBytes, randomUUID } from "node:crypto";
+import { database } from "./db.js";
+import {
+  parseResource,
+  type Envelope,
+  type Preview,
+  type ServiceId,
+} from "./contracts.js";
+import { logFailure } from "./diagnostics.js";
 
-export async function issueChallenge(input: { resource: string; agent: string; deploymentId: string; serviceId: ServiceId }) {
+export async function issueChallenge(input: {
+  resource: string;
+  agent: string;
+  deploymentId: string;
+  serviceId: ServiceId;
+}) {
   const { runId } = parseResource(input.resource);
-  const nonce = `0x${randomBytes(32).toString('hex')}`;
+  const nonce = `0x${randomBytes(32).toString("hex")}`;
   const sql = database();
   // A shared monotonically increasing counter bounds *all* challenges, including consumed ones.
   const rows = await sql`
     WITH budget AS (
-      INSERT INTO runtime_state(key, value)
-      SELECT ${`challenges:${input.deploymentId}:${runId}:${input.serviceId}`}, '{"count":1}'::jsonb
-      WHERE EXISTS (SELECT 1 FROM sessions WHERE run_id = ${runId}::uuid
-        AND deployment_id = ${input.deploymentId} AND expires_at > clock_timestamp())
+      INSERT INTO runtime_state(key, value, expires_at)
+      SELECT ${`challenges:${input.deploymentId}:${runId}:${input.serviceId}`}, '{"count":1}'::jsonb, expires_at
+      FROM sessions WHERE run_id = ${runId}::uuid
+        AND deployment_id = ${input.deploymentId} AND expires_at > clock_timestamp()
       ON CONFLICT (key) DO UPDATE SET value = jsonb_build_object('count', (runtime_state.value->>'count')::int + 1),
-        updated_at = clock_timestamp()
+        updated_at = clock_timestamp(), expires_at=EXCLUDED.expires_at
       WHERE (runtime_state.value->>'count')::int < 120
       RETURNING key
     )
@@ -24,11 +35,15 @@ export async function issueChallenge(input: { resource: string; agent: string; d
     RETURNING nonce, floor(extract(epoch FROM expires_at))::bigint::text AS expires
   `;
   const row = rows[0];
-  if (!row) throw new Error('CHALLENGE_LIMIT');
+  if (!row) throw new Error("CHALLENGE_LIMIT");
   return { nonce: String(row.nonce), expiresAtUnix: Number(row.expires) };
 }
 
-export async function challengeExists(envelope: Envelope, agent: string, deploymentId: string) {
+export async function challengeExists(
+  envelope: Envelope,
+  agent: string,
+  deploymentId: string,
+) {
   const { runId } = parseResource(envelope.resource);
   const sql = database();
   const rows = await sql`
@@ -43,14 +58,28 @@ export async function challengeExists(envelope: Envelope, agent: string, deploym
 }
 
 export type VerifiedOperation = {
-  envelope: Envelope; agent: string; deploymentId: string; notAfterUnix: number;
-  checkedBlock: bigint; checkedAtMs: number;
+  envelope: Envelope;
+  agent: string;
+  deploymentId: string;
+  notAfterUnix: number;
+  checkedBlock: bigint;
+  checkedAtMs: number;
 };
 
 // This single PostgreSQL statement is an implicit transaction. The DELETE output is
 // the *only* source for the UPDATE. There is no read-then-unconditional-write gap.
-export async function consumeAndApply(verified: VerifiedOperation, preview?: Preview) {
-  const { envelope, deploymentId, agent, notAfterUnix, checkedBlock, checkedAtMs } = verified;
+export async function consumeAndApply(
+  verified: VerifiedOperation,
+  preview?: Preview,
+) {
+  const {
+    envelope,
+    deploymentId,
+    agent,
+    notAfterUnix,
+    checkedBlock,
+    checkedAtMs,
+  } = verified;
   const { runId, project } = parseResource(envelope.resource);
   const sql = database();
   if (preview) {
@@ -97,7 +126,11 @@ export async function consumeAndApply(verified: VerifiedOperation, preview?: Pre
   return rows[0] ?? null;
 }
 
-export async function observeHead(deploymentId: string, serviceId: ServiceId, block: bigint) {
+export async function observeHead(
+  deploymentId: string,
+  serviceId: ServiceId,
+  block: bigint,
+) {
   const sql = database();
   const rows = await sql`
     INSERT INTO runtime_state(key, value) VALUES (${`head:${deploymentId}:${serviceId}`}, jsonb_build_object('block', ${block.toString()}::bigint::text))
@@ -108,7 +141,10 @@ export async function observeHead(deploymentId: string, serviceId: ServiceId, bl
   return BigInt(rows[0]!.block as string) === block;
 }
 
-export async function startSession(deploymentId: string, initial: Record<'atlas' | 'boreal', Preview>) {
+export async function startSession(
+  deploymentId: string,
+  initial: Record<"atlas" | "boreal", Preview>,
+) {
   const sql = database();
   const runId = randomUUID();
   const rows = await sql`
@@ -128,13 +164,39 @@ export async function startSession(deploymentId: string, initial: Record<'atlas'
     ) SELECT s.run_id, s.expires_at FROM session s WHERE (SELECT count(*) FROM seed) = 2
   `;
   if (!rows[0]) return null;
-  // Bounded cleanup, outside the authorization path. Keep pending chain operations.
+  // A committed session remains a success if optional housekeeping fails.
+  try {
+    await cleanupRuntime(sql);
+  } catch (error) {
+    logFailure("runtime.cleanup", error);
+  }
+  return {
+    runId,
+    expiresAt: new Date(String(rows[0].expires_at)).toISOString(),
+  };
+}
+
+export async function cleanupRuntime(sql = database()) {
+  // Indexed, bounded batches. High-water observations have no TTL. A pending
+  // signed transaction must survive its session and must never be timed out here.
+  await sql`
+    WITH legacy_keys AS (
+      SELECT key FROM runtime_state WHERE expires_at IS NULL AND key LIKE 'challenges:%'
+      ORDER BY updated_at,key LIMIT 40 FOR UPDATE SKIP LOCKED
+    ) UPDATE runtime_state r SET expires_at=r.updated_at + interval '5 minutes'
+      FROM legacy_keys l WHERE r.key=l.key
+  `;
+  await sql`
+    WITH expired_keys AS (
+      SELECT key FROM runtime_state WHERE expires_at < clock_timestamp() - interval '1 day'
+      ORDER BY expires_at,key LIMIT 40 FOR UPDATE SKIP LOCKED
+    ) DELETE FROM runtime_state r USING expired_keys e WHERE r.key=e.key
+  `;
   await sql`
     DELETE FROM sessions WHERE run_id IN (
       SELECT s.run_id FROM sessions s WHERE s.expires_at < clock_timestamp() - interval '1 day'
       AND NOT EXISTS (SELECT 1 FROM chain_operations o WHERE o.run_id = s.run_id AND o.status IN ('preparing','prepared','submitted'))
-      LIMIT 20
+      ORDER BY s.expires_at LIMIT 20 FOR UPDATE OF s SKIP LOCKED
     )
   `;
-  return { runId, expiresAt: new Date(String(rows[0].expires_at)).toISOString() };
 }

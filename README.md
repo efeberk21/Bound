@@ -51,6 +51,8 @@ npm run build
 
 Live tests use test gas, write synthetic records and occupy the five-minute shared demo slot. They are not substituted with a fake chain. Detailed test status and limitations are in [docs/demo.md](docs/demo.md). Runtime test fixtures are scoped to generated IDs. Do not run this prototype's tests against an unrelated database.
 
+Migrations are ordered and recorded with normalized-source checksums. `db:migrate` requires the direct URL; re-running it preserves applied migrations and rejects edited history. Challenge counters have indexed retention cleanup, while pending chain operations and authorization high-water observations are preserved. Node 22 unit/build checks are defined in `.github/workflows/ci.yml`.
+
 ## Deploy to Vercel Hobby
 
 Use one project with repository-root build settings from `vercel.json`. No Docker, own server, domain purchase, ORM, Redis or auth platform is needed. Use the default `vercel.app` domain. Configure these **server-only** environment values in Vercel:
@@ -96,6 +98,8 @@ This optional mode uses `AGENT_PRIVATE_KEY` from the environment for fresh signe
 `npm run evidence:export` exports allowlisted public observations from local experiments into [docs/evidence.json](docs/evidence.json). It excludes keys, cookies, challenge nonces, signatures, raw signed transactions and credential-bearing endpoints. See [Arkiv schema](arkiv/schema.md), [friction log](arkiv/friction.md), [threat model](docs/threat-model.md) and [prior art](docs/prior-art.md).
 
 Live AI is **disabled**. Account inspection found no enabled free AI Gateway credit; enabling it requires card verification. No card, credits or paid fallback was configured. The UI clearly labels deterministic execution; no AI-generated result is claimed.
+
+The deterministic runner validates the actual Content response, keeps its title and extracts the first sentence within preview length limits. Invalid Content responses stop the write. Replay repeats the same signed Preview request after that read. The expiry experiment creates a separate, short-lived **Atlas grant** and can update Atlas after the main grant is revoked; task status is tied to the main grant's key.
 
 Revocation affects new actions after the executor observes the relevant state. It does not retract prior reads or undo completed writes. RPC correctness and chain consensus are trusted. Arkiv and Neon do not form one distributed transaction. Metadata is public, all resources are synthetic, and this prototype is not audited or production-ready.
 
