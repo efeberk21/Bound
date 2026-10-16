@@ -103,4 +103,4 @@ The deterministic runner validates the actual Content response, keeps its title 
 
 Revocation affects new actions after the executor observes the relevant state. It does not retract prior reads or undo completed writes. RPC correctness and chain consensus are trusted. Arkiv and Neon do not form one distributed transaction. Metadata is public, all resources are synthetic, and this prototype is not audited or production-ready.
 
-MIT licensed. The public video and Devfolio submission remain separate delivery tasks; code/test completion alone is not a submitted entry.
+Application code is MIT licensed. Solar icon artwork by 480 Design is CC BY 4.0; see [third-party notices](THIRD_PARTY_NOTICES.md). The public video and Devfolio submission remain separate delivery tasks; code/test completion alone is not a submitted entry.

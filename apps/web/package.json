@@ -1,6 +1,16 @@
 {
-  "name": "@bound/web", "version": "0.1.0", "private": true,
+  "name": "@bound/web",
+  "version": "0.1.0",
+  "private": true,
   "type": "module",
-  "dependencies": { "react": "19.3.1", "react-dom": "19.3.1" },
-  "scripts": { "dev": "vite --host 0.0.0.0", "build": "vite build" }
+  "dependencies": {
+    "@solar-icons/react": "2.3.2",
+    "motion": "14.3.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build"
+  }
 }
