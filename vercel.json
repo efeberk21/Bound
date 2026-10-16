@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "apps/web/dist",
+  "framework": "vite",
+  "functions": { "api/*.ts": { "maxDuration": 60, "includeFiles": "fixtures/**" } },
+  "rewrites": [
+    { "source": "/api/control/:operation", "destination": "/api/control?operation=:operation" },
+    { "source": "/api/content/:operation", "destination": "/api/content?operation=:operation" },
+    { "source": "/api/preview/:operation", "destination": "/api/preview?operation=:operation" }
+  ],
+  "headers": [{ "source": "/(.*)", "headers": [
+    { "key": "X-Content-Type-Options", "value": "nosniff" },
+    { "key": "Referrer-Policy", "value": "no-referrer" },
+    { "key": "X-Frame-Options", "value": "DENY" }
+  ] }]
+}
