@@ -48,6 +48,6 @@ Early public health check at `https://bound-inky.vercel.app/api/control/health` 
 
 The Vercel Hobby AI Gateway screen showed $0.00 enabled credit and an additional card-verification step for free credits. No billing/card configuration was performed. Live AI remains disabled; deterministic test mode is labeled honestly. No artificial model output is reported as a live model call.
 
-## Measurements still needed
+## Measurements
 
-The lifecycle and HTTP experiments succeeded, but three comparable timing samples and a first-write elapsed development measurement have not yet been collected. No p95, SLA, contest score or estimated win probability is reported.
+Three fresh Content round-trip samples were collected on Node 22.23.3 against the local HTTP adapter with real Arkiv/Neon: 2297, 1330 and 1367 ms. The evidence includes the actual platform, Node version and origin; these are three individual observations, not a p95 or SLA. An elapsed first-write development measurement was not recorded and is not reconstructed retrospectively. No contest score or estimated win probability is reported.
