@@ -1,11 +1,11 @@
 {
   "network": "Tiramisu",
   "chainId": 7738577,
-  "commit": "39627f43a4fd42d5eefcc40e28e8cd0c35bd1fb0",
+  "commit": "e430c658854284cb6589ca0ea69d72264268201b",
   "workingTreeDirty": true,
   "sourceTreeHash": "9538ed09d92c0ff7f65061c6a693d2c2b3ee161f7c3df14154b516bf0b017c86",
   "nodeVersion": "v22.23.3",
-  "exportedAt": "2026-10-16T12:53:29.915Z",
+  "exportedAt": "2026-10-16T12:58:14.847Z",
   "lifecycle": [
     {
       "id": "98cd0a6f-0980-47bd-90e0-05e6a27aabb8",
