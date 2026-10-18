@@ -4,6 +4,8 @@ Implemented 16 October 2026. Local preview: http://localhost:5174/. The black/li
 
 The README banner uses the same original mark and charcoal/citrus palette. Its static layout applies restrained materials, negative tracking on display type, deliberate spacing and a single status accent. The diagram shows the product's actual selective-revocation promise. Editable source: `docs/assets/readme-banner.svg`; GitHub rendering: `docs/assets/readme-banner.png` (3200×1240). Both are original MIT assets, with meaningful alternative text in README.
 
+The matching square project logo is `docs/assets/bound-logo.png` (600×600), with editable source `docs/assets/bound-logo.svg`. It uses the original application mark and was uploaded to the Devfolio entry on 18 October.
+
 ## Visual direction
 
 The workspace uses a true black canvas (`#000000`), near-black surfaces (`#080808`, `#0d0d0d`), warm neutral text and a citrus accent (`#c9f46b`). Lime marks the main action and selected context. Red denotes denial or failure; amber denotes uncertainty. Transaction confirmation remains distinct from a tool's last permission check.

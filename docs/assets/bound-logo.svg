@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">BOUND</title>
+  <desc id="description">The original BOUND overlapping boundary mark in citrus green on charcoal.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="600" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#252C20"/><stop offset="1" stop-color="#10140F"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#background)"/>
+  <rect x="24.5" y="24.5" width="551" height="551" rx="108" stroke="#C9F46B" stroke-opacity=".16"/>
+  <g transform="translate(60 60) scale(15)" stroke="#C9F46B" stroke-width="3.2">
+    <path d="M6 8h10a8 8 0 0 1 0 16H6V8Z"/>
+    <path d="M15 8h11v16H15"/>
+  </g>
+</svg>
