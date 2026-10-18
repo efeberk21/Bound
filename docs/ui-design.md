@@ -1,6 +1,8 @@
 # BOUND interface
 
-Implemented 16 October 2026. Local preview: http://localhost:5174/. This design change has not been deployed to production.
+Implemented 16 October 2026. Local preview: http://localhost:5174/. The black/lime interface was deployed to https://bound-inky.vercel.app on 18 October; release implementation commit `1795095b13ac6f42cb8caef4bc07ae64b49dc533` passed all 11 public live scenarios.
+
+The README banner uses the same original mark and charcoal/citrus palette. Its static layout applies restrained materials, negative tracking on display type, deliberate spacing and a single status accent. The diagram shows the product's actual selective-revocation promise. Editable source: `docs/assets/readme-banner.svg`; GitHub rendering: `docs/assets/readme-banner.png` (3200×1240). Both are original MIT assets, with meaningful alternative text in README.
 
 ## Visual direction
 

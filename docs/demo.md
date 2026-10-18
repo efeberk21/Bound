@@ -44,14 +44,18 @@ Do not present pending checks as passing. Unit, actual database, local HTTP, liv
 
 0:00 two tasks and one agent; 0:15 real grant creation; 0:40 deterministic read/update; 1:05 wrong-project/forged creator; 1:25 Atlas revoke/Boreal continues; 1:55 management-unavailable CLI experiment; 2:25 real expiry evidence; 2:45 MIT source and reproduction instructions.
 
-Label any edited waiting time and separate experiment run IDs. Do not claim live AI or separate-host availability. A video has **not yet been recorded or publicly uploaded**.
+Public video: https://youtu.be/byev8oL21Ww — **2m46s**, 1920×1080, English captions, no narration. It uses edited still captures from the final public interface and Arkiv Explorer. Removed waits and separate creator/expiry supplements are disclosed. The central Atlas revoke/Boreal continuation uses one run and one agent. A downloadable backup is at https://github.com/efeberk21/Bound/releases/tag/v0.1.0-demo.
 
-## Outstanding delivery items
+## Delivery status
 
 - Keep the public-browser verification current after deployment; three individual timing samples are in evidence (no SLA claim).
 - The MIT repository and schema/friction links are public. Keep the submitted commit and deployed version synchronized.
-- Record/upload the <=3-minute public video.
-- User's Devfolio registration, required personal declarations and final submission.
+- The <=3-minute video is uploaded as an unlisted YouTube video, embedded in Devfolio, and backed up as a public GitHub release download.
+- Registration is complete. The Devfolio dashboard confirmed **SUBMITTED** for https://devfolio.co/projects/bound-d480 on 18 October.
 - Keep the deployment available through the competition's required period; no availability guarantee is claimed.
 
 Source checklist: https://github.com/Arkiv-Network/global-tour-stop-pre-devcon/blob/main/docs/submission-checklist.md
+
+## 18 October final release
+
+Implementation `1795095b13ac6f42cb8caef4bc07ae64b49dc533` is deployed at the public alias with the black/lime UI. All 11 public live scenarios passed in 140.95 seconds; the new results exporter also created its nested directory successfully. Fresh no-credential CLI inspection independently returned revoked Atlas DENY and active Boreal ALLOW. The 68 deterministic tests and build passed after the final small fixes; the 20 real DB tests passed during the review with unchanged runtime/migration implementation. See `final-review-2026-10-18.md` for boundaries and evidence.

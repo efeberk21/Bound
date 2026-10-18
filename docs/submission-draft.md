@@ -10,7 +10,9 @@ Live app: https://bound-inky.vercel.app
 
 Source: https://github.com/efeberk21/Bound
 
-Video: pending public upload, maximum three minutes. Do not submit a placeholder URL.
+Published entry: https://devfolio.co/projects/bound-d480 — dashboard confirmed **SUBMITTED** on 18 October.
+
+Video: https://youtu.be/byev8oL21Ww — 2m46s, English captions, edited real browser still captures. Backup: https://github.com/efeberk21/Bound/releases/tag/v0.1.0-demo.
 
 ## The problem it solves
 
@@ -79,13 +81,16 @@ Confirmed by implementation/development records: TypeScript SDK, Docs, Faucet an
 
 A documented prepared-mutation API that returns the signed transaction bytes and hash before broadcasting would make serverless recovery easier. Our integration had to intercept the transport's `eth_sendRawTransaction` boundary to persist those bytes before send. An official prepare/sign/send separation would reduce custom integration code while preserving idempotent recovery.
 
-## Builder-provided answers still required
+## Final preparation notes
 
 - Whether any team member holds Indian nationality; no India-track eligibility is assumed.
 - Pre-existing work before 9 October, if any, with baseline SHA and reused components. Repo history begins 16 October, but that alone cannot establish all work's provenance.
-- Time from starting development to the first successful Arkiv write: choose the actual bucket, not one inferred from commit times.
-- Development LLM list: OpenAI Codex was used; confirm other assistants/models used. Disabled runtime AI does not mean no development LLM use.
-- Feedback-call preference, optional Devcon attendance and required eligibility/ownership/licence declarations.
+- First-write bucket: **2 hours or less**, supported by the implementation chat starting 16 October 06:14:29 UTC and first recorded grant block 641823 at 06:50:12 UTC. This is a record comparison, not an original stopwatch measurement.
+- Development assistant: **OpenAI Codex**. Disabled runtime AI does not mean no development LLM use. No unverified model names are added.
+- Feedback-call preference: **No**, explicitly selected by the builder. Optional Devcon attendance remains unselected, matching registration.
+- Required work/disclosure and public MIT/link-access declarations were completed after final review.
 - Registration contact and payout information, completed privately by the builder.
+
+The form limits short answers to 100 characters. Submitted pre-existing-work answer: `No pre-existing app code. Planning document only; third-party work: docs/prior-art.md and notices.` Submitted LLM answer: `OpenAI Codex (implementation, tests, review, docs). Runtime AI disabled; deterministic demo.` Longer explanations above retain the review context.
 
 Do not publish personal registration information or any credential in this file.

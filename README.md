@@ -1,10 +1,25 @@
+![BOUND — Revoke the task. Keep the agent working. One agent; Atlas revoked, Boreal still authorized.](docs/assets/readme-banner.png)
+
 # BOUND
 
 **Revoke the task. Keep the agent working.**
 
 BOUND grants one EOA agent narrowly scoped access to two synthetic projects. Content and Preview independently read current Arkiv authority. Revoking Atlas stops new Atlas operations while the same agent can keep working on Boreal.
 
-Live demo: https://bound-inky.vercel.app
+[Try the demo](https://bound-inky.vercel.app) · [Watch the 2m46s video](https://youtu.be/byev8oL21Ww) · [Devfolio entry](https://devfolio.co/projects/bound-d480)
+
+Final review and release acceptance: [18 October review](docs/final-review-2026-10-18.md).
+
+## Try the core promise
+
+1. Open the demo and start a five-minute sandbox. No visitor wallet is needed.
+2. Grant Atlas and Boreal, then run Atlas. Content and Preview allow; its saved preview changes.
+3. Revoke Atlas and check it again. Both tools deny new operations; the preview stays unchanged.
+4. Run Boreal with the same agent. Both tools still allow.
+
+The Boundary lab adds wrong-project, forged-creator, replay and real expiry experiments. The runner edits content deterministically; live AI is disabled.
+
+[Arkiv schema](arkiv/schema.md) · [Friction report](arkiv/friction.md) · [Public evidence](docs/evidence.json) · [Threat model](docs/threat-model.md)
 
 ## Implemented architecture
 
@@ -103,4 +118,4 @@ The deterministic runner validates the actual Content response, keeps its title 
 
 Revocation affects new actions after the executor observes the relevant state. It does not retract prior reads or undo completed writes. RPC correctness and chain consensus are trusted. Arkiv and Neon do not form one distributed transaction. Metadata is public, all resources are synthetic, and this prototype is not audited or production-ready.
 
-Application code is MIT licensed. Solar icon artwork by 480 Design is CC BY 4.0; see [third-party notices](THIRD_PARTY_NOTICES.md). The public video and Devfolio submission remain separate delivery tasks; code/test completion alone is not a submitted entry.
+Application code and the original README banner are MIT licensed. Solar icon artwork by 480 Design is CC BY 4.0; see [third-party notices](THIRD_PARTY_NOTICES.md). The public demo and video are linked above; the Devfolio dashboard confirmed submission to Arkiv: Global Tour Stop on 18 October 2026.

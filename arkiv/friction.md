@@ -51,3 +51,5 @@ The Vercel Hobby AI Gateway screen showed $0.00 enabled credit and an additional
 ## Measurements
 
 Three fresh Content round-trip samples were collected on Node 22.23.3 against the local HTTP adapter with real Arkiv/Neon: 2297, 1330 and 1367 ms. The evidence includes the actual platform, Node version and origin; these are three individual observations, not a p95 or SLA. An elapsed first-write development measurement was not recorded and is not reconstructed retrospectively. No contest score or estimated win probability is reported.
+
+For the submission's coarse first-write category, a later record check on 18 October compared the initial implementation chat start (16 October 06:14:29 UTC) with the first recorded grant's block timestamp (641823, 06:50:12 UTC). That supports **2 hours or less** from implementation start. It is a timestamp comparison, not a recovered stopwatch measurement or a benchmark including earlier idea research.

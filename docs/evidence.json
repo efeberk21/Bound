@@ -1,11 +1,11 @@
 {
   "network": "Tiramisu",
   "chainId": 7738577,
-  "commit": "e430c658854284cb6589ca0ea69d72264268201b",
-  "workingTreeDirty": true,
-  "sourceTreeHash": "9538ed09d92c0ff7f65061c6a693d2c2b3ee161f7c3df14154b516bf0b017c86",
+  "commit": "1795095b13ac6f42cb8caef4bc07ae64b49dc533",
+  "workingTreeDirty": false,
+  "sourceTreeHash": "0575ea776f250ae1fb6f145bed7fd73dac2d9d619d84136c1173fa0227cccec0",
   "nodeVersion": "v22.23.3",
-  "exportedAt": "2026-10-16T12:58:14.847Z",
+  "exportedAt": "2026-10-18T15:47:31.601Z",
   "lifecycle": [
     {
       "id": "98cd0a6f-0980-47bd-90e0-05e6a27aabb8",
@@ -170,30 +170,30 @@
   ],
   "live": [
     {
-      "runId": "69dc5294-ed95-4c65-aee2-c68e838005a8",
+      "runId": "53ccecd5-716e-4d9b-9612-adf15c7e9a52",
       "mode": "environment",
       "nodeVersion": "v22.23.3",
       "platform": "win32",
       "origin": "https://bound-inky.vercel.app"
     },
     {
-      "id": "dbe575c0-5d15-4189-9701-6e7e135d4df5",
-      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
+      "id": "bfa03d1e-053f-4eba-a3dd-91bd93fdc308",
+      "resource": "demo://bound/53ccecd5-716e-4d9b-9612-adf15c7e9a52/atlas",
       "operation": "grant",
       "status": "confirmed",
-      "txHash": "0xc180a56389948ea12d977dcc8873c1d68a5d5cb520ef72c0418055407aa50413",
-      "entityKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-      "block": "652564",
+      "txHash": "0x1e9f43a03184721f290503dde816b350252d4376f8f4c309e13cede14b8aa05c",
+      "entityKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+      "block": "743999",
       "errorCode": null
     },
     {
-      "id": "f845dfc0-31c2-4bff-ac56-6c57b0d35b76",
-      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/boreal",
+      "id": "bc265b89-5a0a-4620-8f57-023b8d082daa",
+      "resource": "demo://bound/53ccecd5-716e-4d9b-9612-adf15c7e9a52/boreal",
       "operation": "grant",
       "status": "confirmed",
-      "txHash": "0x7fe5fa6b83d9a29bdce636cffe46c2d4e4d2f6445018908afabed6ff06237c89",
-      "entityKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
-      "block": "652566",
+      "txHash": "0xaef48ea9979c91b4ff3b8c35146e6f3a21eea5fcedc2c4d05ce55da2329bb8f1",
+      "entityKey": "0xb22a78e5bed11104d4cdebc73b1842344eaf61c849383f42e0eb64baf4a30e6c",
+      "block": "744001",
       "errorCode": null
     },
     {
@@ -204,11 +204,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.content.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652567",
-          "checkedAt": "2026-10-16T12:48:20.731Z",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744002",
+          "checkedAt": "2026-10-18T15:36:10.722Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "d111b400-0b06-47fe-a6a8-2a256846a5b1",
+          "requestId": "fc7d241f-2494-4b82-bd7d-04f27a04de9a",
           "httpStatus": 200,
           "content": {
             "title": "Atlas — clear content for every launch",
@@ -219,11 +219,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652567",
-          "checkedAt": "2026-10-16T12:48:21.793Z",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744002",
+          "checkedAt": "2026-10-18T15:36:12.017Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "aec44d65-a369-4ae7-8a86-1b21ba073c1e",
+          "requestId": "ea0cf374-1147-4968-862f-c338a6088f9c",
           "httpStatus": 200,
           "preview": {
             "title": "Atlas — clear content for every launch",
@@ -255,10 +255,10 @@
           "decision": "DENY",
           "reasonCode": "WRONG_AGENT",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedAt": "2026-10-16T12:48:22.518Z",
-          "requestId": "1ee28d74-425a-4049-a46e-da1fb8091021",
-          "checkedBlock": "652568",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedAt": "2026-10-18T15:36:12.803Z",
+          "requestId": "fe629ec5-16ea-49e8-b9e7-1592e61f67f2",
+          "checkedBlock": "744003",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec"
         }
       ]
@@ -270,9 +270,9 @@
           "decision": "DENY",
           "reasonCode": "BODY_TAMPERED",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedAt": "2026-10-16T12:48:23.723Z",
-          "requestId": "a7fdf3c4-96b4-48e4-b923-777dd06c4ff5"
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedAt": "2026-10-18T15:36:14.113Z",
+          "requestId": "589e471a-f4e3-4661-a185-f192dc314769"
         }
       ]
     },
@@ -283,9 +283,9 @@
           "decision": "DENY",
           "reasonCode": "WRONG_SCOPE",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedAt": "2026-10-16T12:48:24.522Z",
-          "requestId": "a5daa35f-90ef-45f8-a026-abd9fa176847"
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedAt": "2026-10-18T15:36:14.752Z",
+          "requestId": "cbf75110-aa9d-411f-85cc-ce394ed96104"
         }
       ]
     },
@@ -296,9 +296,9 @@
           "decision": "DENY",
           "reasonCode": "INVALID_PAYLOAD",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedAt": "2026-10-16T12:48:25.250Z",
-          "requestId": "423f1ed0-edce-4324-87ad-e7b1036e831b"
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedAt": "2026-10-18T15:36:15.424Z",
+          "requestId": "f2fc5584-1066-4443-9933-e70df3cd0dd9"
         }
       ]
     },
@@ -309,9 +309,9 @@
           "decision": "DENY",
           "reasonCode": "NONCE_INVALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedAt": "2026-10-16T12:48:25.900Z",
-          "requestId": "aac72309-bb51-40c8-bce0-41da5533ae89"
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedAt": "2026-10-18T15:36:16.082Z",
+          "requestId": "b97a6f3f-8d41-48c8-b2ba-d9c51b7f853c"
         }
       ]
     },
@@ -327,11 +327,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652571",
-          "checkedAt": "2026-10-16T12:48:30.059Z",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744009",
+          "checkedAt": "2026-10-18T15:36:25.202Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "0a6a43c4-e0c0-4616-b18c-7f9a1462232e",
+          "requestId": "58ce4222-2e24-44dc-9bad-a53be8646ac2",
           "preview": {
             "title": "Concurrent test",
             "body": "Only one update is allowed.",
@@ -343,11 +343,11 @@
           "decision": "DENY",
           "reasonCode": "NONCE_OR_TIME_INVALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652571",
-          "checkedAt": "2026-10-16T12:48:30.184Z",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744009",
+          "checkedAt": "2026-10-18T15:36:25.412Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "adc1686d-15ab-4383-925e-f9833763a697",
+          "requestId": "c0539b1f-63e3-4601-bf0e-7f0030391e97",
           "httpStatus": 403
         }
       ]
@@ -376,9 +376,9 @@
           "decision": "DENY",
           "reasonCode": "NONCE_INVALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedAt": "2026-10-16T12:48:32.010Z",
-          "requestId": "ca4d97cc-34e9-4b78-a8d5-964207ffeef4",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedAt": "2026-10-18T15:36:29.064Z",
+          "requestId": "cf0a06fa-e9f3-4bc5-a633-5a2941224f8c",
           "httpStatus": 403
         }
       ]
@@ -396,22 +396,22 @@
           "decision": "DENY",
           "reasonCode": "WRONG_SCOPE",
           "serviceId": "bound.content.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652576",
-          "checkedAt": "2026-10-16T12:48:38.786Z",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744013",
+          "checkedAt": "2026-10-18T15:36:33.196Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "90900765-aabf-4a62-8fc2-2c42d16ed555",
+          "requestId": "274308b0-1f97-482b-8ad6-3bcc74e896aa",
           "httpStatus": 403
         },
         {
           "decision": "DENY",
           "reasonCode": "WRONG_SCOPE",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652576",
-          "checkedAt": "2026-10-16T12:48:37.799Z",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744013",
+          "checkedAt": "2026-10-18T15:36:32.371Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "0ae571e6-8dd4-4089-8eab-ac40e3b36cd8",
+          "requestId": "91e4011f-c53b-4c0e-9bd3-a864cdc600a5",
           "httpStatus": 403
         }
       ],
@@ -432,13 +432,13 @@
       "outcome": "passed"
     },
     {
-      "id": "94c3e072-456d-4176-a8d7-e206f957a124",
-      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
+      "id": "40593b0f-e604-431e-980b-1673d61d681b",
+      "resource": "demo://bound/53ccecd5-716e-4d9b-9612-adf15c7e9a52/atlas",
       "operation": "forged",
       "status": "confirmed",
-      "txHash": "0x0908bf54b53547646c9df93e4cb14230809e14feb9c554dbf200b62e690b72f1",
-      "entityKey": "0xeac726154960c46ee50e58ad480c1ba24845b09a05b1b72d99e16187dbdcbf7b",
-      "block": "652578",
+      "txHash": "0x12e636ed0cb01948d109af643d18aea75a7ee177947b3a4544ce76b57d35a6c5",
+      "entityKey": "0x8d95df0b426c15b71120b4281a91f5e33ec55bfcc10aa6e7df0598a1375aa52f",
+      "block": "744016",
       "errorCode": null
     },
     {
@@ -449,22 +449,22 @@
           "decision": "DENY",
           "reasonCode": "UNTRUSTED_CREATOR",
           "serviceId": "bound.content.v1",
-          "grantKey": "0xeac726154960c46ee50e58ad480c1ba24845b09a05b1b72d99e16187dbdcbf7b",
-          "checkedBlock": "652579",
-          "checkedAt": "2026-10-16T12:48:44.840Z",
+          "grantKey": "0x8d95df0b426c15b71120b4281a91f5e33ec55bfcc10aa6e7df0598a1375aa52f",
+          "checkedBlock": "744017",
+          "checkedAt": "2026-10-18T15:36:40.723Z",
           "observedCreator": "0xAd0c9f02854752f65Ed995e37944790CF4CDfdD3",
-          "requestId": "e36490de-4102-4837-925b-a5f43c1aaf12",
+          "requestId": "458dcb13-d10e-4130-afd9-4ad7d18dd877",
           "httpStatus": 403
         },
         {
           "decision": "DENY",
           "reasonCode": "UNTRUSTED_CREATOR",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xeac726154960c46ee50e58ad480c1ba24845b09a05b1b72d99e16187dbdcbf7b",
-          "checkedBlock": "652579",
-          "checkedAt": "2026-10-16T12:48:43.701Z",
+          "grantKey": "0x8d95df0b426c15b71120b4281a91f5e33ec55bfcc10aa6e7df0598a1375aa52f",
+          "checkedBlock": "744017",
+          "checkedAt": "2026-10-18T15:36:39.932Z",
           "observedCreator": "0xAd0c9f02854752f65Ed995e37944790CF4CDfdD3",
-          "requestId": "e933f8d6-7a31-4218-8cf4-4c928233e005",
+          "requestId": "7286ca29-6f95-458c-96ed-73574ada2196",
           "httpStatus": 403
         }
       ],
@@ -492,11 +492,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.content.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652580",
-          "checkedAt": "2026-10-16T12:48:46.735Z",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744018",
+          "checkedAt": "2026-10-18T15:36:42.687Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "7584e6d7-a6dd-435d-b93d-f76fd291e57a",
+          "requestId": "da3a21bb-a551-428e-9340-ed429f868448",
           "httpStatus": 200,
           "content": {
             "title": "Atlas — clear content for every launch",
@@ -507,11 +507,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652580",
-          "checkedAt": "2026-10-16T12:48:47.488Z",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744018",
+          "checkedAt": "2026-10-18T15:36:43.419Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "a315a614-7ad0-4c1c-8d40-2c7aad25bdf6",
+          "requestId": "19b00c65-a5e8-49e6-ac61-0e9a5dd2f01d",
           "httpStatus": 200,
           "preview": {
             "title": "Atlas — clear content for every launch",
@@ -523,9 +523,9 @@
           "decision": "DENY",
           "reasonCode": "NONCE_INVALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedAt": "2026-10-16T12:48:47.569Z",
-          "requestId": "c9c66d71-00a8-4a51-a55f-a742ccd2f686",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedAt": "2026-10-18T15:36:43.473Z",
+          "requestId": "d2ac63ab-a233-4b57-a68a-7e58e9c9c96d",
           "httpStatus": 403
         }
       ],
@@ -546,13 +546,13 @@
       "outcome": "passed"
     },
     {
-      "id": "8e95ed24-280e-4c6b-834c-d0f6fae33104",
-      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
+      "id": "4dc70205-2487-4908-879d-8760c665f249",
+      "resource": "demo://bound/53ccecd5-716e-4d9b-9612-adf15c7e9a52/atlas",
       "operation": "revoke",
       "status": "confirmed",
-      "txHash": "0xbed7aeafbbf802d41725f1c0ced59897b3c683ce0fb3b074f517c10eb5fe494d",
-      "entityKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-      "block": "652584",
+      "txHash": "0xce6f52e3079ed22ce56d9f2120364e81cc25c092f2ecea57d6a19230adb22c66",
+      "entityKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+      "block": "744021",
       "errorCode": null
     },
     {
@@ -562,11 +562,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.content.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652582",
-          "checkedAt": "2026-10-16T12:48:50.723Z",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744019",
+          "checkedAt": "2026-10-18T15:36:44.528Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "6bcff667-debb-4293-a808-6d192b7cb353",
+          "requestId": "bff2f5e2-5f18-4c38-9442-7d717bbd9c0a",
           "content": {
             "title": "Atlas — clear content for every launch",
             "body": "Atlas helps small software teams turn scattered launch notes into a clear project introduction. Bring the important details together, explain what the product does, and prepare a short preview that is easy for your audience to understand."
@@ -577,10 +577,10 @@
           "decision": "DENY",
           "reasonCode": "GRANT_NOT_ACTIVE",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652585",
-          "checkedAt": "2026-10-16T12:48:56.813Z",
-          "requestId": "608b1dbf-2132-4172-91b0-5e0772b25af4",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744022",
+          "checkedAt": "2026-10-18T15:36:50.519Z",
+          "requestId": "e8d47e1e-3649-4192-8201-b16540ab9781",
           "httpStatus": 403
         }
       ]
@@ -593,20 +593,20 @@
           "decision": "DENY",
           "reasonCode": "GRANT_NOT_ACTIVE",
           "serviceId": "bound.content.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652586",
-          "checkedAt": "2026-10-16T12:48:58.878Z",
-          "requestId": "08a70d31-3743-4a89-8b5c-dd4576e7b27e",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744023",
+          "checkedAt": "2026-10-18T15:36:52.562Z",
+          "requestId": "36c49687-c7f4-429b-b7fd-037a15a05710",
           "httpStatus": 403
         },
         {
           "decision": "DENY",
           "reasonCode": "GRANT_NOT_ACTIVE",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652586",
-          "checkedAt": "2026-10-16T12:48:58.109Z",
-          "requestId": "3c104ba8-727e-44ca-81e1-91faef81cb05",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744023",
+          "checkedAt": "2026-10-18T15:36:51.685Z",
+          "requestId": "0303aa9f-2023-45f5-b08c-27d249b61cb4",
           "httpStatus": 403
         }
       ],
@@ -627,13 +627,13 @@
       "outcome": "passed"
     },
     {
-      "id": "8e95ed24-280e-4c6b-834c-d0f6fae33104",
-      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
+      "id": "4dc70205-2487-4908-879d-8760c665f249",
+      "resource": "demo://bound/53ccecd5-716e-4d9b-9612-adf15c7e9a52/atlas",
       "operation": "revoke",
       "status": "confirmed",
-      "txHash": "0xbed7aeafbbf802d41725f1c0ced59897b3c683ce0fb3b074f517c10eb5fe494d",
-      "entityKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-      "block": "652584",
+      "txHash": "0xce6f52e3079ed22ce56d9f2120364e81cc25c092f2ecea57d6a19230adb22c66",
+      "entityKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+      "block": "744021",
       "errorCode": null
     },
     {
@@ -644,11 +644,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.content.v1",
-          "grantKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
-          "checkedBlock": "652587",
-          "checkedAt": "2026-10-16T12:49:00.919Z",
+          "grantKey": "0xb22a78e5bed11104d4cdebc73b1842344eaf61c849383f42e0eb64baf4a30e6c",
+          "checkedBlock": "744024",
+          "checkedAt": "2026-10-18T15:36:54.646Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "ee1f7c6b-2a30-4ed2-81fe-1fdd56ae414b",
+          "requestId": "3b22b3a3-1381-47b6-8250-3925affc5ab2",
           "httpStatus": 200,
           "content": {
             "title": "Boreal — bring project updates together",
@@ -659,11 +659,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
-          "checkedBlock": "652587",
-          "checkedAt": "2026-10-16T12:49:01.682Z",
+          "grantKey": "0xb22a78e5bed11104d4cdebc73b1842344eaf61c849383f42e0eb64baf4a30e6c",
+          "checkedBlock": "744024",
+          "checkedAt": "2026-10-18T15:36:55.396Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "3d914065-5a5c-42da-8ed8-e1d295254dc2",
+          "requestId": "8823e476-1da6-44f1-a178-833a5633fb83",
           "httpStatus": 200,
           "preview": {
             "title": "Boreal — bring project updates together",
@@ -690,31 +690,31 @@
           "decision": "DENY",
           "reasonCode": "GRANT_NOT_ACTIVE",
           "serviceId": "bound.content.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652589",
-          "checkedAt": "2026-10-16T12:48:58.459Z",
-          "requestId": "eedcb2f6-35c8-486c-abda-b9536487eecc",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744025",
+          "checkedAt": "2026-10-18T15:36:54.631Z",
+          "requestId": "249b0fda-0350-48f7-b57e-093978c66ee9",
           "httpStatus": 403
         },
         {
           "decision": "DENY",
           "reasonCode": "GRANT_NOT_ACTIVE",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0x6128619eb5d1a16818a7d7e3f0f4d8523c8bf868a730e0c49243fad6b388a38d",
-          "checkedBlock": "652589",
-          "checkedAt": "2026-10-16T12:49:00.597Z",
-          "requestId": "662b5626-7bcc-4782-869c-9611e9240743",
+          "grantKey": "0x056bb32f7808bc301582d4d2f394edf97d16da6eb2d6590f69f3069a0f02f494",
+          "checkedBlock": "744026",
+          "checkedAt": "2026-10-18T15:36:56.286Z",
+          "requestId": "7433aac9-a2bd-4376-b42a-94a24917f868",
           "httpStatus": 403
         },
         {
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.content.v1",
-          "grantKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
-          "checkedBlock": "652590",
-          "checkedAt": "2026-10-16T12:49:07.264Z",
+          "grantKey": "0xb22a78e5bed11104d4cdebc73b1842344eaf61c849383f42e0eb64baf4a30e6c",
+          "checkedBlock": "744027",
+          "checkedAt": "2026-10-18T15:37:01.235Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "60e66bef-9af8-4384-834c-1e5a88a368ef",
+          "requestId": "e4109b53-6cd0-4481-a910-308c7f744291",
           "content": {
             "title": "Boreal — bring project updates together",
             "body": "Boreal gives small teams a simple place to shape their project updates. Collect progress, explain the next milestone, and turn a long description into a concise preview that people can read quickly before exploring the full project."
@@ -725,11 +725,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xefdb739f29b6a1efd40a5902557e468275a6225d73b7267271e15e1ef141dde1",
-          "checkedBlock": "652591",
-          "checkedAt": "2026-10-16T12:49:09.208Z",
+          "grantKey": "0xb22a78e5bed11104d4cdebc73b1842344eaf61c849383f42e0eb64baf4a30e6c",
+          "checkedBlock": "744028",
+          "checkedAt": "2026-10-18T15:37:03.347Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "52949fd1-e004-4718-95bf-fd40a5e8de7c",
+          "requestId": "47f1e11c-77bd-44d8-b1d4-9333a5eae13e",
           "preview": {
             "title": "Independent tool",
             "body": "Management is unavailable.",
@@ -750,13 +750,13 @@
       "outcome": "passed"
     },
     {
-      "id": "8c08fc68-cbba-487e-a91e-f4485047a29f",
-      "resource": "demo://bound/69dc5294-ed95-4c65-aee2-c68e838005a8/atlas",
+      "id": "25eea91a-259a-4747-ae47-1bdcb74ede55",
+      "resource": "demo://bound/53ccecd5-716e-4d9b-9612-adf15c7e9a52/atlas",
       "operation": "expiry",
       "status": "confirmed",
-      "txHash": "0xa2c362febca349f70843e8d891509dba851105c678c0c7340716f81c6f05a142",
-      "entityKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
-      "block": "652594",
+      "txHash": "0xe3a06bf8aa8c64474a82aa4afbcd4ca9a3ccde9fea538b98a1e6870bb6ac89fb",
+      "entityKey": "0xd081f51446e58fc33115ebc7c26bd2546397af0804458f6b55898be8f3ffaf76",
+      "block": "744031",
       "errorCode": null
     },
     {
@@ -767,11 +767,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.content.v1",
-          "grantKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
-          "checkedBlock": "652595",
-          "checkedAt": "2026-10-16T12:49:18.142Z",
+          "grantKey": "0xd081f51446e58fc33115ebc7c26bd2546397af0804458f6b55898be8f3ffaf76",
+          "checkedBlock": "744032",
+          "checkedAt": "2026-10-18T15:37:11.382Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "4031c2cb-4ee5-44cf-a2fb-56156352e3d9",
+          "requestId": "a97cb925-ee50-4eda-8899-d93d97c2a9e1",
           "httpStatus": 200,
           "content": {
             "title": "Atlas — clear content for every launch",
@@ -782,11 +782,11 @@
           "decision": "ALLOW",
           "reasonCode": "GRANT_VALID",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
-          "checkedBlock": "652595",
-          "checkedAt": "2026-10-16T12:49:17.244Z",
+          "grantKey": "0xd081f51446e58fc33115ebc7c26bd2546397af0804458f6b55898be8f3ffaf76",
+          "checkedBlock": "744032",
+          "checkedAt": "2026-10-18T15:37:10.546Z",
           "observedCreator": "0x388908396B857F27cAea668aaAD4428614cf34Ec",
-          "requestId": "5356f380-9f60-4147-9902-be62a3f2d4c2",
+          "requestId": "cb09afd5-cf20-4acc-9b8b-c849991d0c45",
           "httpStatus": 200,
           "preview": {
             "title": "Permission boundary test",
@@ -814,20 +814,20 @@
           "decision": "DENY",
           "reasonCode": "GRANT_NOT_ACTIVE",
           "serviceId": "bound.content.v1",
-          "grantKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
-          "checkedBlock": "652629",
-          "checkedAt": "2026-10-16T12:50:24.848Z",
-          "requestId": "98b51f41-b4b6-4531-8aaf-f41bbfd3f5d0",
+          "grantKey": "0xd081f51446e58fc33115ebc7c26bd2546397af0804458f6b55898be8f3ffaf76",
+          "checkedBlock": "744066",
+          "checkedAt": "2026-10-18T15:38:17.920Z",
+          "requestId": "a62baad1-be54-43a1-beec-938195562081",
           "httpStatus": 403
         },
         {
           "decision": "DENY",
           "reasonCode": "GRANT_NOT_ACTIVE",
           "serviceId": "bound.preview.v1",
-          "grantKey": "0xae0afff20f26940f47de1fed2a8e85ae94216e67d03f65be880a0e2a6fe43514",
-          "checkedBlock": "652629",
-          "checkedAt": "2026-10-16T12:50:23.793Z",
-          "requestId": "45848555-0e36-4f8b-a3ba-7ccef86c3399",
+          "grantKey": "0xd081f51446e58fc33115ebc7c26bd2546397af0804458f6b55898be8f3ffaf76",
+          "checkedBlock": "744065",
+          "checkedAt": "2026-10-18T15:38:17.058Z",
+          "requestId": "29f8e071-2877-4385-9356-a581cb92cd4b",
           "httpStatus": 403
         }
       ],

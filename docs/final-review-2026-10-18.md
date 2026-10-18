@@ -1,6 +1,6 @@
 # BOUND final product review — 18 October 2026
 
-Decision: the narrow authorization product is ready for final delivery preparation. No new feature is required to substantiate its central claim. The entry is not complete until the current interface is deployed, a public video of at most three minutes is linked, and the required Devfolio answers and declarations are completed.
+Decision: the narrow authorization product is ready and submitted. No new feature is required to substantiate its central claim. The current interface is deployed, the 2m46s video is linked, and the Devfolio dashboard confirmed **SUBMITTED** on 18 October.
 
 Reviewed implementation baseline: `456cf0bae5a7c6445204325776b8a6ba3cfc9700`. The serverless revision controls architecture; superseded Docker, process-local state and separate-key-boundary requirements from the original plan were not treated as current promises.
 
@@ -54,7 +54,21 @@ Security is the strongest track match: the actual on-chain creator is checked ag
 
 No feature expansion is recommended before the deadline. Prioritize synchronized deployment, a clear real-operation video, concise specific answers and anonymous link checks. Do not claim production audit, separate operators, instantaneous global revoke, live AI, pagination usage or hosting-failure resistance.
 
-Registration, eligibility and personal declarations require the builder's actual information. The first-write timing and complete development-LLM list were not reconstructed from commit timestamps. The application must stay up through 23 October. Submission closes **19 October 2026 01:59 Europe/Istanbul**; deadline source records London 18 October 23:59 BST.
+Registration, eligibility and personal declarations require the builder's actual information. The application must stay up through 23 October. Submission closes **19 October 2026 01:59 Europe/Istanbul**; deadline source records London 18 October 23:59 BST.
+
+## Final release acceptance
+
+Implementation commit `1795095b13ac6f42cb8caef4bc07ae64b49dc533` was published and deployed on 18 October. The production alias serves the same JS/CSS asset names as the local final build. All **11 public live scenarios passed in 140.95 seconds**, with real Arkiv/Neon and public HTTP for the main API scenarios. Independent-process/response-loss/Control-404 scenarios use local HTTP workers against those same real dependencies. The nested results directory was created successfully by the repaired test exporter.
+
+The independent CLI was then run from an empty working directory with only public configuration and RPC. No private key, database URL, session secret or app HTTP endpoint was supplied. It returned Atlas DENY at block 744105 and Boreal ALLOW at 744106. Detailed public observations were exported to `docs/evidence.json`; they name the tested implementation revision.
+
+The development record was examined for the previously unknown first-write bucket. The initial implementation chat started **16 October 06:14:29 UTC**; block **641823**, containing the first recorded successful grant, has timestamp **06:50:12 UTC**. This supports the form's **2 hours or less** category (35m43s from that implementation-chat start), not a stopwatch performance benchmark or a claim about earlier idea research. The previous friction note accurately describes the absence of an original stopwatch measurement.
+
+Current-release CI: https://github.com/efeberk21/Bound/actions/runs/39141112902
+
+The final 2m46s demo was uploaded with the builder's approval: https://youtu.be/byev8oL21Ww. It is an unlisted video of real browser still captures with English captions. Wait removal and separate creator/expiry supplements are disclosed. Actual Atlas CREATE/DELETE history is shown in Arkiv Explorer; source captures and edit manifest are local review artifacts. A public downloadable backup is attached to the `v0.1.0-demo` GitHub release. The backup returned HTTP 200 without account credentials. YouTube Studio confirmed unlisted publication; its browser playback was checked in a signed-in session, not represented as an anonymous playback test.
+
+Devfolio confirmed **SUBMITTED** and explicitly stated that BOUND was published and submitted to **Arkiv: Global Tour Stop** on 18 October. Public project: https://devfolio.co/projects/bound-d480. Security and Open Source tracks, required project answers, two factual declarations, three screenshots and the YouTube media embed were saved. Screenshot proof is retained locally at `.local/audit/devfolio-submitted-2026-10-18.png`. The builder completed registration and its legal acceptance personally; registration contact and payout data are not included in this repo. Documentation/evidence updates after implementation `1795095` do not change the deployed executable source.
 
 ## Canonical sources
 
