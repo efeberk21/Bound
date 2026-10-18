@@ -1,5 +1,5 @@
 import { existsSync } from 'node:fs';
-import { writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
 import { privateKeyToAccount } from 'viem/accounts';
 import type { Hex } from 'viem';
@@ -7,6 +7,7 @@ import { arkivClient, grantQuery } from '../packages/core/src/arkiv.js';
 import { database } from '../packages/core/src/db.js';
 import { requestChainOperation, resumeChainOperation, publicOperation, type ChainState } from '../packages/core/src/chain.js';
 if(existsSync('.env'))process.loadEnvFile('.env');
+await mkdir('.local', {recursive:true});
 const sql=database();
 const runId=randomUUID();
 const deploymentId=process.env.DEPLOYMENT_ID!;

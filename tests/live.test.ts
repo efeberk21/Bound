@@ -1,6 +1,7 @@
 import { afterAll, beforeAll, describe, it, expect } from "vitest";
 import { existsSync } from "node:fs";
-import { writeFile } from "node:fs/promises";
+import { mkdir, writeFile } from "node:fs/promises";
+import { dirname } from "node:path";
 import { spawn } from "node:child_process";
 import { randomUUID } from "node:crypto";
 import { generatePrivateKey, privateKeyToAccount } from "viem/accounts";
@@ -138,8 +139,10 @@ describe.sequential("Live Tiramisu + HTTP + real Neon", () => {
     borealGrant = await chain("grant", "boreal");
   }, 90000);
   afterAll(async () => {
+    const resultsPath = process.env.BOUND_LIVE_RESULTS_FILE || ".local/live-results.json";
+    await mkdir(dirname(resultsPath), { recursive: true });
     await writeFile(
-      process.env.BOUND_LIVE_RESULTS_FILE || ".local/live-results.json",
+      resultsPath,
       JSON.stringify(records, null, 2),
     );
   });

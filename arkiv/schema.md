@@ -40,7 +40,7 @@ expiresAt: 642273
 
 The entity above was deleted. Its later absence is expected; use the transaction evidence for historical reproduction and create a fresh demo for active-grant inspection.
 
-Listing queries are constructed by `listQuery` with `app`, `kind`, `run_id`, `.createdBy(trustedCreator)`, and optional exact `agent`/`resource`. Use `for await (const entity of query)` to walk every page; SDK cursors bind all pages to a snapshot. Listings do not select authorization for execution: execution always names one exact grant key.
+The repository also provides an optional `listQuery` integration helper with `app`, `kind`, `run_id`, `.createdBy(trustedCreator)`, and optional exact `agent`/`resource`. The current application, scripts and tests do not call this helper. Compound listing and cursor pagination are therefore not claimed as demonstrated features. Execution uses the exact-key, block-pinned query above and checks the returned entity's actual creator and owner.
 
 The UI's session operation list comes from Neon transaction tracking and is labeled as such; it is not a cached ALLOW list. Forged records are separate labeled operations and are never accepted because their namespace matches.
 

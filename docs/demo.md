@@ -49,7 +49,7 @@ Label any edited waiting time and separate experiment run IDs. Do not claim live
 ## Outstanding delivery items
 
 - Keep the public-browser verification current after deployment; three individual timing samples are in evidence (no SLA claim).
-- Publish and verify the MIT Git repository and all documentation links.
+- The MIT repository and schema/friction links are public. Keep the submitted commit and deployed version synchronized.
 - Record/upload the <=3-minute public video.
 - User's Devfolio registration, required personal declarations and final submission.
 - Keep the deployment available through the competition's required period; no availability guarantee is claimed.

@@ -240,7 +240,7 @@ export function AppearanceControl() {
   const [appearance, setAppearance] = useState<Appearance>(() => {
     try {
       const stored = localStorage.getItem("bound-appearance");
-      if (stored === "light" || stored === "dark") return stored;
+      if (stored === "system" || stored === "light" || stored === "dark") return stored;
     } catch {
       /* Device preference remains available without storage. */
     }
